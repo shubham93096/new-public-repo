@@ -1,2 +1,9 @@
 Hello All
 Good Morning Everyone
+#!/bin/bash
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd  # to enable
+systemctl status httpd
+echo "my server one" > /var/www/html/index.html
